@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/header"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/planetImageIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:translationZ="@dimen/cardview_compat_inset_shadow"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/planetNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Planet "
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/likeButton"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|right"
+
+            android:layout_marginRight="1dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Like"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/savedButton"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|right"
+
+            android:layout_marginLeft="1dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#4D4D50" />
+</LinearLayout>
